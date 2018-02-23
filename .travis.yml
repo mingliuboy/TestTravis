@@ -2,6 +2,8 @@
 # language: python
 language: java
 
+sudo: true
+
 os: linux
 
 addons:
@@ -32,10 +34,10 @@ branches:
    - master
 
 install:
-   - pip install pytest-html
+   - sudo pip install pytest
+   - sudo pip install pytest-html
 
 script: 
-  - pytest
   - ./travis_build.sh
 
 notifications:
