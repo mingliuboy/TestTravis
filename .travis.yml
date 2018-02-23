@@ -1,0 +1,32 @@
+ 
+language: python
+
+# sudo: true
+
+# group: deprecated-2017Q4
+
+# dist: trusty
+
+# os: linux
+
+python:
+   - "3.6"
+
+install:
+   - pip install -r requirements.txt
+
+branches:
+  only:
+   - master
+
+script: 
+  - pytest
+  - pytest-html
+  - ./travis_build.sh
+
+notifications:
+  email:
+     recipients:
+      - testeda@163.com
+     on_success: always
+     on_failure: always
