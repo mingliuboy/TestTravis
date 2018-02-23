@@ -21,7 +21,7 @@ install:
 
 script: 
   - pytest
-  - travis_build.sh
+  - ./travis_build.sh
 
 notifications:
   email:
