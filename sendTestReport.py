@@ -75,9 +75,9 @@ if __name__ == '__main__':
     test_file = './testReport/testReport.html'
     setup_file = './'
 
-    test_cases_dir = os.path.abspath(os.path.dirname(setup_file))
+    # test_cases_dir = os.path.abspath(os.path.dirname(setup_file))
     
-    os.system("pytest runRestAPI.py --html=%s" % test_file)
+    # os.system("pytest runRestAPI.py --html=%s" % test_file)
 
     test_reports_dir = os.path.abspath(os.path.dirname(test_file))
 
