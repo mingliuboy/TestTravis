@@ -18,7 +18,7 @@ def send_email(new_report):
     with file(new_report, 'r') as f:
         mail_body = f.read()
 
-    mail_body = "<html>Test</html>"
+    # mail_body = "<html>Test</html>"
     # 发件人地址
     from_addr = 'mingeasilydo@naver.com'
     # 收件人地址 weicheng@edison.tech
