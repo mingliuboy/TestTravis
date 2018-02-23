@@ -228,7 +228,7 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <p>Report generated on 23-Feb-2018 at 16:49:59 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.16.1</p>
+    <p>Report generated on 22-Feb-2018 at 17:56:31 by<a href="https://pypi.python.org/pypi/pytest-html"> pytest-html</a> v1.16.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -247,8 +247,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.6.4</td></tr></table>
     <h2>Summary</h2>
-    <p>0 tests ran in 0.00 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>1 tests ran in 2.68 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">22 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -258,4 +258,224 @@ function filter_table(elem) {
           <th class="sortable numeric" col="duration">Duration</th>
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead></table></body></html>
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_Login::setup</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 69<br/>  def test_Login(email, pwd):<br/><span class="error">E       fixture &#x27;email&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:69<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_Logout::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 87<br/>  def test_Logout(token):<br/><span class="error">E       fixture &#x27;token&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:87<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_Register::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 104<br/>  def test_Register(email, pwd):<br/><span class="error">E       fixture &#x27;email&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:104<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_checkToken::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 129<br/>  def test_checkToken(newToken):<br/><span class="error">E       fixture &#x27;newToken&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:129<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_updatePushToken::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 145<br/>  def test_updatePushToken(newPushToken, accounts):<br/><span class="error">E       fixture &#x27;newPushToken&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:145<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_uploadContacts::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 161<br/>  def test_uploadContacts(token, email, displayName, direction, fromCount, toCount, lastContactTime):<br/><span class="error">E       fixture &#x27;token&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:161<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_loadHeaderIcon::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 182<br/>  def test_loadHeaderIcon(email):<br/><span class="error">E       fixture &#x27;email&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:182<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_loadChatMessage::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 192<br/>  def test_loadChatMessage(email):<br/><span class="error">E       fixture &#x27;email&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:192<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_loadBadge::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 202<br/>  def test_loadBadge(token, isGet, status):<br/><span class="error">E       fixture &#x27;token&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:202<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_queryProfile::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 224<br/>  def test_queryProfile(token, email, uId):<br/><span class="error">E       fixture &#x27;token&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:224<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_morequeryProfile::setup</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 240<br/>  def test_morequeryProfile(token, emails):<br/><span class="error">E       fixture &#x27;token&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:240<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_profileSetting::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py, line 253<br/>  def test_profileSetting(token, name, avatar):<br/><span class="error">E       fixture &#x27;token&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatHttpsConnection.py:253<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_parseLogin::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py, line 49<br/>  def test_parseLogin(JsonData):<br/><span class="error">E       fixture &#x27;JsonData&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py:49<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_parseRegister::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py, line 67<br/>  def test_parseRegister(JsonData):<br/><span class="error">E       fixture &#x27;JsonData&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py:67<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_parseUpdateToken::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py, line 107<br/>  def test_parseUpdateToken(JsonData):<br/><span class="error">E       fixture &#x27;JsonData&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py:107<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_parseUploadContacts::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py, line 111<br/>  def test_parseUploadContacts(JsonData):<br/><span class="error">E       fixture &#x27;JsonData&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py:111<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_parseLocalMessages::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py, line 128<br/>  def test_parseLocalMessages(JsonData):<br/><span class="error">E       fixture &#x27;JsonData&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py:128<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_parseBadge::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py, line 136<br/>  def test_parseBadge(JsonData):<br/><span class="error">E       fixture &#x27;JsonData&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py:136<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_parseQueryProfile::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py, line 144<br/>  def test_parseQueryProfile(JsonData):<br/><span class="error">E       fixture &#x27;JsonData&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py:144<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_parseServerReponse::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py, line 169<br/>  def test_parseServerReponse(JsonData):<br/><span class="error">E       fixture &#x27;JsonData&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py:169<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_parseAllJson::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py, line 176<br/>  def test_parseAllJson(jsonData, confirmData, parseType):<br/><span class="error">E       fixture &#x27;jsonData&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py:176<br/></div></td></tr></tbody>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">runRestAPI.py::test_parseJson::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">file /Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py, line 195<br/>  def test_parseJson(JsonData, parseType, start_time):<br/><span class="error">E       fixture &#x27;JsonData&#x27; not found</span><br/>&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, doctest_namespace, metadata, monkeypatch, pytestconfig, record_xml_attribute, record_xml_property, recwarn, tmpdir, tmpdir_factory<br/>&gt;       use &#x27;pytest --fixtures [testpath]&#x27; for help on them.<br/><br/>/Users/liuming/Projects/clyk_server/ChatServerAutomation/ChatParse.py:195<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">runRestAPI.py::test_examples</td>
+          <td class="col-duration">2.26</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">def test_examples():<br/>        pass<br/>    <br/>        # 测试注册，登出步骤<br/>&gt;       test_Register(&quot;testeda@163.com&quot;, &quot;Easilydo1&quot;)<br/><br/>runRestAPI.py:12: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>ChatHttpsConnection.py:126: in test_Register<br/>    test_parseJson(reponseData, register_type, start_time)<br/>ChatParse.py:233: in test_parseJson<br/>    test_parseRegister(JsonData[&quot;data&quot;])<br/>ChatParse.py:102: in test_parseRegister<br/>    printAccessInfo(nickName, &quot;nickName&quot;)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>obj = &#x27;&#x27;, title = &#x27;nickName&#x27;, isNone = 1<br/><br/>    def printAccessInfo(obj, title, isNone=1):<br/>        if isNone == 1:<br/>            value = obj<br/>            print(&quot;关键字: %s&quot; % title)<br/>            # print(&#x27;type:  %s&#x27; % type(value))<br/>            # if isinstance(value, unicode):<br/>            assert value is not None, str(value) + &quot; is None&quot;<br/>            if isinstance(value, bool) == 0:<br/>&gt;               assert len(value) &gt; 0, value + &quot; is no String&quot;<br/><span class="error">E               AssertionError:  is no String</span><br/><br/>ChatParse.py:41: AssertionError<br/>----------------------------- Captured stdout call -----------------------------<br/>======================== Register =========================
+url: https://restxmpp.stag.easilydo.cc/client/register
+发包:{&#x27;name&#x27;: &#x27;&#x27;, &#x27;emailType&#x27;: &#x27;0&#x27;, &#x27;emailProvider&#x27;: &#x27;other&#x27;, &#x27;emailHost&#x27;: &#x27;mail.163.com&#x27;, &#x27;emailSSL&#x27;: 1, &#x27;emailPort&#x27;: 443, &#x27;emailAddress&#x27;: &#x27;testeda@163.com&#x27;, &#x27;emailPassword&#x27;: &#x27;Easilydo1&#x27;, &#x27;platform&#x27;: &#x27;IOS&#x27;, &#x27;dveiceModel&#x27;: &#x27;iPhone7&#x27;, &#x27;pushToken&#x27;: &#x27;&#x27;, &#x27;deviceId&#x27;: &#x27;398dd48c-e1b4-3029-9e4d-04ea65a797a4&#x27;, &#x27;autoLogin&#x27;: 0, &#x27;otherAccounts&#x27;: [{&#x27;&#x27;: &#x27;&#x27;}]}
+response.getcode() : %s 200
+收包:{&#x27;data&#x27;: {&#x27;expiresIn&#x27;: 604800, &#x27;password&#x27;: &#x27;KskD6bWTT&#x27;, &#x27;isNewRegistered&#x27;: False, &#x27;name&#x27;: &#x27;&#x27;, &#x27;accessToken&#x27;: &#x27;WA7Hg3zKTW-7sSukBJ_-zQ&#x27;, &#x27;userId&#x27;: &#x27;600902&#x27;, &#x27;badgeSetting&#x27;: False, &#x27;email&#x27;: &#x27;testeda@163.com&#x27;}, &#x27;resultCode&#x27;: 1, &#x27;resultMsg&#x27;: &#x27;Success&#x27;}
+运行时间(秒): 2.2606608867645264
+===== Success =====
+关键字: accessToken
+关键字: userId
+关键字: badgeSetting
+关键字: password
+关键字: emailAddress
+关键字: nickName
+</div></td></tr></tbody></table></body></html>
