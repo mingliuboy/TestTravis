@@ -16,10 +16,12 @@ branches:
   only:
    - master
 
+install:
+   - pip install pytest-html
+
 script: 
   - pytest
-  - pytest-html
-  - ./travis_build.sh
+  - travis_build.sh
 
 notifications:
   email:
