@@ -8,7 +8,7 @@ from email.header import Header
 from datetime import datetime
 import time
 import sys
-reload(sys)
+# reload(sys)
 sys.setdefaultencoding('utf8')
 
 
